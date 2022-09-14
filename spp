@@ -1,0 +1,45 @@
+ public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        
+       String SBMPTN, SNMPTN, MANDIRI, A, B, C, DSP, SPP, jalurmasuk, golongan;
+       
+        System.out.println("pilihan jalur masuk");
+        System.out.println("1. SBMPTN");
+        System.out.println("2. SNMPTN");
+        System.out.println("3. MANDIRI");
+        System.out.print("Masukkan jalur masuk: ");
+        jalurmasuk=input.next();
+        
+        System.out.println("pilihan golongan");
+        System.out.println("1. A");
+        System.out.println("2. B");
+        System.out.println("3. C");
+        System.out.print("Masukan golongan: ");
+        golongan = input.next();
+        
+        if (jalurmasuk.equalsIgnoreCase("SBMPTN")&&golongan.equalsIgnoreCase("A")){
+            System.out.println("DSP : 5JT SPP : 500RB");
+        }else if(jalurmasuk.equalsIgnoreCase("SBMPTN")&&golongan.equalsIgnoreCase("B")){
+            System.out.println("DSP : 15JT SPP : 1JT");
+        }else if (jalurmasuk.equalsIgnoreCase("SBMPTN")&&golongan.equalsIgnoreCase("C")){
+            System.out.println("DSP : 30JT SPP : 2JT");
+        }else if (jalurmasuk.equalsIgnoreCase("SNMPTN")&&golongan.equalsIgnoreCase("A")){
+            System.out.println("DSP : 7JT SPP : 500RB");
+        }else if (jalurmasuk.equalsIgnoreCase("SNMPTN")&&golongan.equalsIgnoreCase("B")){
+            System.out.println("DSP : 17JT SPP : 1JT");
+        }else if (jalurmasuk.equalsIgnoreCase("SNMPTN")&&golongan.equalsIgnoreCase("C")){
+            System.out.println("DSP : 35JT SPP : 2JT");
+        }else if (jalurmasuk.equalsIgnoreCase("MANDIRI")&&golongan.equalsIgnoreCase("A")){
+            System.out.println("DSP : 1OJT SPP : 1JT");
+        }else if (jalurmasuk.equalsIgnoreCase("MANDIRI")&&golongan.equalsIgnoreCase("B")){
+            System.out.println("DSP : 25JT SPP : 2JT");
+        }else if (jalurmasuk.equalsIgnoreCase("MANDIRI")&&golongan.equalsIgnoreCase("C")){
+            System.out.println("DSP : 50JT SPP: 3JT");
+        }
+                
+        
+        
+    }
+            
+    
+}
